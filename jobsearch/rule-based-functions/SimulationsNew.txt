@@ -1,0 +1,240 @@
+===== Job Name: Plumber for our planned construction ===== 
+
+if(National Capital Region === Central Visayas){ statement = 0 } 
+
+if( Audit and Taxation IS IN Civil Engineering/Construction ){ statement = 0 } 
+
+if(Pasay City === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:3</b>
+
+<b>Is Data Valid:false</b>
+
+===== Job Name: Welder for RTL Inc. ===== 
+
+if(National Capital Region === Central Visayas){ statement = 0 } 
+
+if( Audit and Taxation IS IN Civil Engineering/Construction ){ statement = 0 } 
+
+if(Pasay City === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:3</b>
+
+<b>Is Data Valid:false</b>
+
+===== Job Name: Construction Manager ===== 
+
+if(National Capital Region === Central Visayas){ statement = 0 } 
+
+if( Audit and Taxation IS IN Corporate Finance/Investment,General/Cost Accounting,Top Management,Architect/Interior Design,Civil Engineering/Construction,Property/Real Estate,Quantity Surveying ){ statement = 0 } 
+
+if(Pasay City === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:3</b>
+
+<b>Is Data Valid:false</b>
+
+===== Job Name: An Architect for our desired bulding ===== 
+
+if(National Capital Region === Central Visayas){ statement = 0 } 
+
+if( Audit and Taxation IS IN Architect/Interior Design,Civil Engineering/Construction,Property/Real Estate,Quantity Surveying ){ statement = 0 } 
+
+if(Pasay City === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:3</b>
+
+<b>Is Data Valid:false</b>
+
+===== Job Name: Tile Maker ===== 
+
+if(National Capital Region === Central Visayas){ statement = 0 } 
+
+if( Audit and Taxation IS IN Architect/Interior Design ){ statement = 0 } 
+
+if(Pasay City === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:3</b>
+
+<b>Is Data Valid:false</b>
+
+===== Job Name: Risk Manager ===== 
+
+if(National Capital Region === Central Visayas){ statement = 0 } 
+
+if( Audit and Taxation IS IN Law/Legal Services ){ statement = 0 } 
+
+if(Caloocan City === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:3</b>
+
+<b>Is Data Valid:false</b>
+
+===== Job Name: Law Firm Internal Auditor ===== 
+
+if(National Capital Region === Central Visayas){ statement = 0 } 
+
+if( Audit and Taxation IS IN Law/Legal Services ){ statement = 0 } 
+
+if(Caloocan City === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:3</b>
+
+<b>Is Data Valid:false</b>
+
+===== Job Name: Legal Secratary ===== 
+
+if(National Capital Region === Central Visayas){ statement = 0 } 
+
+if( Audit and Taxation IS IN Law/Legal Services ){ statement = 0 } 
+
+if(Caloocan City === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:3</b>
+
+<b>Is Data Valid:false</b>
+
+===== Job Name: Event Manager for our OctoberFest ===== 
+
+if(Davao === Central Visayas){ statement = 0 } 
+
+if( Audit and Taxation IS IN Clerical/Administrative,Top Management,Purchasing/Material Management ){ statement = 0 } 
+
+if(Davao Oriental === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:3</b>
+
+<b>Is Data Valid:false</b>
+
+===== Job Name: F&B Manager ===== 
+
+if(Davao === Central Visayas){ statement = 0 } 
+
+if( Audit and Taxation IS IN Top Management,Food/Beverage/Restaurant,Maintanance,Manufacturing,Process Design & Control,Purchasing/Material Management ){ statement = 0 } 
+
+if(Davao Oriental === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:3</b>
+
+<b>Is Data Valid:false</b>
+
+===== Job Name: Manager of Quality Assurance ===== 
+
+if(National Capital Region === Central Visayas){ statement = 0 } 
+
+if( Audit and Taxation IS IN Manufacturing,Process Design & Control ){ statement = 0 } 
+
+if(Quezon City === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:3</b>
+
+<b>Is Data Valid:false</b>
+
+===== Job Name: Pharmacy Technician for the latest drugs ===== 
+
+if(National Capital Region === Central Visayas){ statement = 0 } 
+
+if( Audit and Taxation IS IN Pharmacy ){ statement = 0 } 
+
+if(Quezon City === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:3</b>
+
+<b>Is Data Valid:false</b>
+
+===== Job Name: Senior Accountant for Unilever PH. ===== 
+
+if(National Capital Region === Central Visayas){ statement = 0 } 
+
+if( Audit and Taxation IS IN Banking/Financial,Corporate Finance/Investment,General/Cost Accounting ){ statement = 0 } 
+
+if(Quezon City === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:3</b>
+
+<b>Is Data Valid:false</b>
+
+===== Job Name: In need of Human Resources ===== 
+
+if(National Capital Region === Central Visayas){ statement = 0 } 
+
+if( Audit and Taxation IS IN Others ){ statement = 0 } 
+
+if(Caloocan City === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:3</b>
+
+<b>Is Data Valid:false</b>
+
+===== Job Name: Experts Lawyers Needed! ===== 
+
+if(National Capital Region === Central Visayas){ statement = 0 } 
+
+if( Audit and Taxation IS IN Law/Legal Services ){ statement = 0 } 
+
+if(Caloocan City === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:3</b>
+
+<b>Is Data Valid:false</b>
+
+===== Job Name: MaisMais Project Lead ===== 
+
+if(Cagayan Valley === Central Visayas){ statement = 0 } 
+
+if( Audit and Taxation IS IN Top Management,Audit and Taxation,Corporate Finance/Investment ){ statement = 1 } 
+
+if(Batanes === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:2</b>
+
+<b>Is Data Valid:false</b>
+
+===== Job Name: Land Development Project Head ===== 
+
+if(Cagayan Valley === Central Visayas){ statement = 0 } 
+
+if( Audit and Taxation IS IN Advertising,Top Management,Corporate Finance/Investment,General/Cost Accounting ){ statement = 0 } 
+
+if(Batanes === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:3</b>
+
+<b>Is Data Valid:false</b>
+
+===== Job Name: Hiring Corn Farmers ===== 
+
+if(Cagayan Valley === Central Visayas){ statement = 0 } 
+
+if( Audit and Taxation IS IN Advertising ){ statement = 0 } 
+
+if(Batanes === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:3</b>
+
+<b>Is Data Valid:false</b>
+
+===== Job Name: Needed File Taker ===== 
+
+if(Central Visayas === Central Visayas){ statement = 1 } 
+
+if( Audit and Taxation IS IN Audit and Taxation,Banking/Financial,Corporate Finance/Investment,General/Cost Accounting,Mass Communication ){ statement = 1 } 
+
+if(Cebu === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:1</b>
+
+<b>Is Data Valid:true</b>
+
+===== Job Name: IT Consultant ===== 
+
+if(Central Visayas === Central Visayas){ statement = 1 } 
+
+if( Audit and Taxation IS IN Software,Sales-Eng/Tech/IT ){ statement = 0 } 
+
+if(Cebu === Bohol){ statement = 0 } 
+
+<b>Number of Mismatches:2</b>
+
+<b>Is Data Valid:false</b>
+

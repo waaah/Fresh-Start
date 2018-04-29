@@ -1,0 +1,622 @@
+/*
+@media screen and (min-device-width: 769px) {
+#more, #less{
+	display: none;
+}
+#menu-mobile{
+	display: none;
+}
+}
+#navdiv{
+	background-color: #00bfa5;
+	position: fixed;
+	width: 100%;
+	height: 10%;
+	box-shadow: 5px 11px 5px 5px #888888;
+}
+#maindiv{
+	position: all;
+	background-color: #102323;
+	box-shadow: 1px 1px 1px #888888;
+}
+#botdiv{
+	background-color: #102323;
+	position: fixed;
+	width: 100%;
+	height: 90%;
+	top:10%;
+	box-shadow: 1px 1px 1px #888888;
+}
+#searchinput{
+	width:70%;
+	height: 50%;
+	position: relative;
+	top:20%;
+	left: 5%;
+	border-style: none;
+	font-size: 35px;
+}
+#searchbtn{
+	top:95%;
+	width: 100%;
+	height: 85%;
+	position: absolute;
+}
+#datadiv{
+	margin:1%;
+	background-color: #cde321;
+	position: absolute;
+	width: 55%;
+	left: 9%;
+	height: 99%;
+	box-shadow: 1px 1px 1px #888888;
+}
+.statusbuttonx{
+	margin: 2%;
+	background-color: transparent;
+	border: none;
+	position: relative;
+	bottom:20%;
+	left:20%;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+}
+.bottom-left{
+	top: 70%;
+	position: relative;
+	margin-left: 15%;
+	margin-bottom: 1%;
+}
+.left{
+	position: absolute;
+	width: 30%;
+	height: 100%;
+	left: 5%;
+}
+.right{
+
+	position: relative;
+	width: 70%;
+	height: 100%;
+	left:-5%;
+}
+#time{
+	right: 0%;
+	position: absolute;
+}
+.carddiv{
+	top:1%;
+	margin:1%;
+	background-color: white;
+	height: 45%;
+	position: relative;
+	box-shadow: 1px 1px 1px #888888;
+
+}
+
+#filterstatus{
+	
+	height: 10%;
+	background-color: #100fe0;
+	position: relative;
+	box-shadow: 1px 1px 1px #888888;
+}
+#searchresultdiv{
+	margin-top:1%;
+	height: 89%;
+	background-color: #100fe0;
+	position: relative;
+	overflow-y: auto;
+	box-shadow: 1px 1px 1px #888888;
+	
+
+}
+.chip{
+	margin: 1%;
+}
+#filterdiv{
+	margin:1%;
+	background-color: #80cbc4;
+	position: absolute;
+	width: 24%;
+	left: 65%;	
+	height: 99%;
+	box-shadow: 1px 1px 1px #888888;
+}
+#searchdiv{
+	margin: 5%;
+	position: relative;
+	height: 15%;
+	box-shadow: 1px 1px 1px #888888;
+}
+#bonusfilterdiv{
+	position: absolute;
+	margin: 5%;
+	width: 90%;
+	height: 80%;
+	box-shadow: 1px 1px 1px #888888;
+
+}
+#insidefilterdiv{
+	margin: 10%;
+}
+
+.navbuttons{
+margin:1%; 
+position:absolute;
+height: 100%;
+
+left: 50%;
+top:0%;
+}
+.logo{
+
+width: 30%;
+
+}
+.logopic{
+	left: 9%;
+	height: 100%;
+	position: absolute;
+}
+.profilepic{
+	height: 65%;
+	position: absolute;
+}
+.info{
+width: 100%;
+height: 100%;
+position: absolute;
+left:0%;
+
+}
+p{
+	line-height: 1;
+}
+.description{
+	text-overflow: ellipsis;
+}
+::-webkit-scrollbar { display: none; }
+.description{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; 
+  overflow-y: hidden; 
+
+}
+@media screen and (max-device-width: 768px) {
+	#navdiv{
+		z-index: 1; 
+	background-color: #00bfa5;
+	position: fixed;
+	width: 100%;
+	height: 10%;
+	box-shadow: 5px 11px 5px 5px #888888;
+}
+.navbuttons{
+margin:2%; 
+position:absolute;
+height: 100%;
+left: 50%;
+top:0%;
+
+}
+.logo{
+
+width: 30%;
+
+}
+.logopic{
+	left: 0%;
+	height: 100%;
+	position: absolute;
+}
+
+#filterdiv{
+
+	margin:1%;
+	background-color:transparent ;
+	position: fixed;
+	z-index: -3;
+	top:10%;
+	left: 0%;
+	width:100%;
+	height: 100%;
+	
+}
+#searchdiv{
+	margin: 5% ;
+	margin-top: 0%;
+	z-index: 2;
+	position: absolute;
+	height: 10%;
+	width: 90%;
+	box-shadow: 1px 1px 1px #888888;
+
+}
+#bonusfilterdiv{
+	display: none;
+	z-index: 1;
+	position: relative;
+	margin: 5%;
+	width: 90%;
+	height: 50%;	
+	bottom: -8%;
+	box-shadow: 1px 1px 1px #888888;
+
+}
+#insidefilterdiv{
+	margin: 10%;
+}
+.input-field{
+	height: 40%;
+}
+#search{
+	height: 200%;
+	font-size: 100px;
+}
+#searchbtn{
+top: 20%;
+position: relative;
+height: 10%;
+font-size: 300%;
+
+}
+#botdiv{
+	background-color: #102323;
+	position: absolute;
+	width: 100%;
+	height: 90%;
+	top:10%;
+	z-index: -1;
+	box-shadow: 1px 1px 1px #888888;
+}
+#searchinput{
+	width:70%;
+	height: 0%;
+	position: relative;
+	top:20%;
+	left: 5%;
+	border-style: none;
+	font-size: 35px;
+}
+#searchbtn{
+	top:200%;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+#datadiv{
+	z-index: -2;
+	margin:1%;
+	background-color: #cde321;
+	position: fixed;
+	width: 90%;
+	left: 5%;
+	top:24%;
+	height: 99%;
+	box-shadow: 1px 1px 1px #888888;
+}
+.statusbuttonx{
+	margin: 2%;
+	background-color: transparent;
+	border: none;
+	position: relative;
+	bottom:20%;
+	left:20%;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+}
+#more{
+	height: 15%;
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	width: 100%;
+	font-size: 300%;
+}
+#less{
+	position: fixed;
+	right: 10%;
+	bottom: 5%;
+	height: 150px;
+	width: 150px;
+	background-color: #e53935 ;
+}
+#i-size{
+	font-size: 500%;
+}
+#i-size-two{
+	font-size: 130%;
+}
+#i-size-three{
+	font-size: 800%;
+}
+#menu-mobile{
+	position: fixed;
+	right: 3%;
+	top: 2%;
+	height: 150px;
+	width: 150px;
+
+}
+#maindiv{
+	z-index: -4;
+	position: all;
+	background-color: #102323;
+	box-shadow: 1px 1px 1px #888888;
+}
+#searchresultdiv{
+	z-index: 0;
+	margin-top:1%;
+	height: 89%;
+	background-color: #100fe0;
+	position: relative;
+	overflow-y: auto;
+	box-shadow: 1px 1px 1px #888888;
+	
+}
+select{
+	height: 300%;
+	font-size: 500%;
+
+}
+option{
+	font-size: 20%;
+}
+#optionbox{
+	height: 100px;
+}
+label{ 
+font-size: 300%;
+ }
+ #filterstatus{
+	
+	height: 5%;
+	background-color: #100fe0;
+	position: relative;
+	box-shadow: 1px 1px 1px #888888;
+}
+
+.carddiv{
+	top:1%;
+	margin:1%;
+	background-color: white;
+	height: 15%;
+	position: relative;
+	box-shadow: 1px 1px 1px #888888;
+
+}
+.bottom-left{
+	top: 70%;
+	position: relative;
+	margin-left: 5%;
+	margin-bottom: 1%;
+}
+.left{
+	position: absolute;
+	width: 30%;
+	height: 100%;
+	left: 5%;
+}
+.right{
+
+	position: relative;
+	width: 65%;
+	height: 100%;
+	left:-5%;
+	top: -3%;
+	font-size: 180%;
+}
+.navbtn{
+	display: none;
+}
+.info{
+	position: absolute;
+	top: 40%; 
+}
+.description{
+	display: none;
+}
+#filterstatus{
+	
+	height: 5%;
+	background-color: #100fe0;
+	position: relative;
+	box-shadow: 1px 1px 1px #888888;
+}
+.chip{
+	padding: 2%;
+	font-size: 350%;
+	height: 80%;
+	width: 20%;
+}
+.like-dec-btn{
+	height: 60px;
+	width:60px;
+}
+}*/
+
+.navigation{
+	padding: 20px;
+}
+
+body{
+	background: #e5e5e5;	
+}
+	
+.parallax-container{
+	height:150px;
+}
+.list-container{
+	box-shadow: none;
+	border: 3px #e0e0e0 solid;
+}
+.section{
+	margin: 20px;
+}
+.card-container{
+	margin: 50px;
+}
+.card-panel > .card-header{
+	border-bottom: 1px #009688 solid; 
+	margin-bottom: 10px; 
+}
+.btn.fill{
+	width: 100%;
+	min-width: 142px;
+	margin: 10px;
+}
+@media screen and (max-width: 600px){
+	.btn.fill{
+		margin: 0px;
+		margin-bottom: 10px;
+	}
+	.list-image{
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.card-container{
+		margin: 10px;
+	}
+
+}
+@media screen and (max-width: 992px){
+	.search-panel{
+		display: none;
+	}
+	.toolbar-without-search{
+		display: none !important;
+	}
+	.toolbar-with-search{
+		display: block !important;
+	}
+}
+.list-image{
+	max-width: 200px;
+	width: 100%;
+	vertical-align: middle;	
+}
+.toolbar-without-search{
+	display: block;
+}
+.toolbar-with-search{
+	display: none;
+}
+.icon-navbar{
+	width: 100%;
+	max-width: 100px;
+}
+.logo-navbar{
+	width: 100%;
+	max-width: 200px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+li.active{
+	background: #009688;
+
+}
+.pagination > li{
+	background: white;
+}
+
+.searchbar-container{
+	min-height: 80px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+.inputbox-padding{
+	padding: 2px;
+}
+.search-button i{
+	height: 2.5rem;
+	
+}
+.search-button{
+	width: 100%;
+}
+#optionbox{
+	width: 100%;
+}
+#search{
+	background: white;
+	margin-bottom: 0px;
+}
+.empty-image{
+	width: 80%;
+	max-width: 200px;
+}
+.bolded{
+	font-weight: bolder;
+}
+#search-select{
+	background: white !important;
+}
+/*for applicant side only*/
+.blue{
+	background: #0499C8 !important;
+}
+#params_modal > h5{
+	margin: 20px; 
+	border-bottom: 1px solid #e5e5e5;
+}
+input{
+	padding: 2px;
+}
+.select-wrapper input.select-dropdown{
+	background: white;
+	padding: 2px;
+}
+@media screen and (max-width: 600px){
+
+}
+#close-panel{
+	display: none;
+}
+.filter-box-ul{
+	margin: 0;
+}
+label#slider-label{
+	font-size: 13px;
+	padding:5px;
+	padding-left: 0;
+}
+div#slider-value{
+	display: inline-block;
+}
+.row{
+	margin-bottom: 0;
+}
+.btn-small{
+	width: 40px;
+	margin-left: -5px;
+	margin-top: 50px; 
+	text-align: center;
+	text-decoration: none;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: .5px;
+    border: none;
+    border-radius: 2px;
+    display: inline;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0);
+}
+.star{
+	display: inline;
+    color: yellow;
+}
+.star:before{
+	margin: 5px;
+	font-size: 1.25em;
+	display: inline;
+	font-family: FontAwesome;
+	content: "\2605";
+
+}
+i.small-text{
+	font-size: 12px !important;
+}

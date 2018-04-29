@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html moznomarginboxes>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+	<meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Joshua S.Co">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="jscolor-2.0.4/jscolor.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="resume2.css">
+	<script type="text/javascript">
+		function printResume(){
+			window.print();
+		}
+		$(function(){
+			
+			$("#edit-resume").click(function(){
+				$(".filter-container").toggle();
+			})
+			$(".change_fontsize").on("change",function(){
+				var whatFor = $(this).attr("for") 
+				var value = parseInt($(this).val());
+				if(whatFor == "resumeBody"){
+					$(".resume2").css("font-size", value +"px")
+				}
+				else if(whatFor == "header"){
+					$("h1").css("font-size",  (value+1) +"em")
+					$("h2").css("font-size",  (value+.5) +"em")
+					$("h3").css("font-size",  (value+.17) +"em")
+					$("h4").css("font-size",  value +"em")
+					$("h5").css("font-size",  (value-.17) +"em")
+					$("h6").css("font-size",  (value+.33) +"em")					
+				}
+			})
+			$("#font-list").change(function(){
+				$(".resume2").css("font-family",$("#font-list option:selected").text())
+			})
+		})
+		function update(jscolor){
+			document.getElementsByClassName('resume2')[0].style.color = "#" +jscolor;
+		}
+		
+		function updateBackColor(jscolor){
+			var color =  "#" + jscolor;
+			var len = document.getElementsByTagName('h2').length;
+			for(var i = 0;i < len;i++){
+				document.getElementsByTagName('h2')[i].style.borderBottom = "1.5px solid"+color;
+			}
+			document.getElementsByClassName('self-info')[0].style.borderBottom = "1.5px solid"+color;
+			document.getElementsByClassName('self-info')[0].style.borderTop = "1.5px solid"+color;
+
+		}
+		function uploadFunction(){
+			if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('.coverphoto').attr('src', e.target.result);
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        	}
+        	else{alert("error")}
+		}
+		$("#imgInp").change(function(){
+			readURL(this)
+		})
+	</script>
+	
+	<title>Resume 2</title>
+</head>
+<body>
+	<div class="noprintGroup">
+		<div class="floating-container">
+			<input type="file" id="imgInp">
+			<button class="floating-button" id="edit-resume"><i class="fa fa-edit fa-2x" aria-hidden="true"></i></button>
+			<button class="floating-button"><i class="fa fa-question-circle fa-2x" aria-hidden="true"></i></button>
+			<button class="floating-button" onclick="printResume()"><i class="fa fa-print fa-2x" aria-hidden="true"></i></button>
+		</div>
+		<div class="filter-container" style="display: none">
+			<div class="filter-element">
+				Font Color: <input for="text" id="color-picker" class="jscolor {onFineChange:'update(this)'}" value="000000">
+			</div>
+			<div class="filter-element">
+				Overall Font Size: <input type="number" for="resumeBody" class='change_fontsize'>
+			</div>
+			<div class="filter-element">
+				Header Font Size: <input type="number" for="header" class='change_fontsize'>
+			</div>
+			<div class="filter-element">
+				Font List: 
+				<select id="font-list">
+					<option style="font-family: Arial, Helvetica, sans-serif">Arial, Helvetica, sans-serif</option>	
+					<option style="font-family: Comic Sans MS, cursive, sans-serif">Comic Sans MS, cursive, sans-serif</option>
+					<option style="font-family: Tahoma, Geneva, sans-serif">Tahoma, Geneva, sans-serif</option>
+					<option style="font-family: Verdana, Geneva, sans-serif">Verdana, Geneva, sans-serif</option>
+				</select>
+			</div>
+			<div class="filter-element">
+				Back Color: <input class="jscolor {onFineChange:'updateBackColor(this)'}" value="4CA69D">
+			</div>
+		</div>
+	</div>
+	<div class="resume2">
+		<div class="cover-container">
+			<img src="profile-other.png" class="propic">
+		</div>
+		<div class="resume-content">
+			<section class="self-info">
+				<h1 class="name">John Doe</h1>
+				juliano.pirene@ctmailing.us/
+				juliano.pirene@ctmailing.us/
+				190-1111/09395043108
+			</section>
+
+			
+			<section class="past-experiences">
+				<h2>Past Work Experiences</h2>
+				<div class="leftContent">
+					<h4>Company #1</h4>
+					City, State
+					Dates Worked
+
+					<h4>Job Title</h4>
+
+					Responsibilities / Achievements
+					Responsibilities / Achievements
+				</div>
+				<div class="rightContent">
+					<h4>Company #2</h4>
+					City, State
+					Dates Worked
+
+					<h4>Job Title</h4>
+
+					Responsibilities / Achievements
+
+					Responsibilities / Achievements
+				</div>
+			</section>
+
+			<section class="education">
+				<h2>Skills</h2>
+				<div class="leftContent">
+					<h4>BS in Mechanical Engineering, May 1997 </h4>
+					University of Texas, Austin, TX
+					Minor: Business Management
+
+					<h4>BS in Mechanical Engineering, May 1997</h4>
+					University of Texas, Austin, TX
+					Minor: Business Management
+				</div>
+				<div class="rightContent">
+					<h4>BS in Mechanical Engineering, May 1997 </h4> 
+					University of Texas, Austin, TX
+					Minor: Business Management
+				</div>
+			</section>
+
+			<section class="skills">
+				<h2>Skills</h2>
+				<div class="splitContent">
+					<div class="leftContent">
+						<h4>JQuery</h4>
+						<progress value="50" max="100"></progress>
+						<h4>Sleeping</h4>
+						<progress value="70" max="100"></progress>
+					</div>
+					<div class="rightContent">
+						<h4>Quack</h4>
+						<progress value="50" max="100"></progress>
+						<h4>Blah</h4>
+						<progress value="70" max="100"></progress>
+					</div>
+				</div>
+			</section>
+			<section class="education">
+				<h2>Seminars Attended</h2>
+				<div class="leftContent">
+					<h4>Fine Tuning The Company's Online Presense</h4>
+					New Era University
+					2010-2015   
+					
+					<h4>Fine Tuning The Company's Online Presense</h4>
+					New Era University
+					2010-2015   
+				</div>
+				<div class="rightContent">
+					<h4>Fine Tuning The Company's Online Presense</h4>
+					New Era University
+					2010-2015 
+
+					<h4>Fine Tuning The Company's Online Presense</h4>
+					New Era University
+					2010-2015 
+				</div>    
+			</section>
+			<section class="about">
+				<h2>About Me</h2>
+				A highly motivated and hardworking individual, who has recently completed their A-Levels, achieving excellent grades in both Maths and Science. Seeking an apprenticeship in the engineering industry to build upon a keen scientific interest and start a career as a maintenance engineer. Eventual career goal is to become a fully-qualified and experienced maintenance or electrical engineer, with the longer-term aspiration of moving into project management.
+			</section>
+
+		</div>
+	</div>
+</body>
+</html>

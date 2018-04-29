@@ -1,0 +1,464 @@
+/*   
+ * Template Name: Orbit - Responsive Resume/CV Template for Developers
+ * Version: 1.0
+ * Author: Xiaoying Riley
+ * Twitter: @3rdwave_themes
+ * License: Creative Commons Attribution 3.0 License
+ * Website: http://themes.3rdwavemedia.com/
+*/
+/* styles.css */
+/* ======= Base ======= */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #545E6C;
+  font-size: 14px;
+  padding: 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #EEE;
+    overflow-y: auto;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+a {
+  color: #2d7788;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+a:hover {
+  text-decoration: underline;
+  color: #1a454f;
+}
+a:focus {
+  text-decoration: none;
+}
+p {
+  line-height: 1.5;
+}
+.wrapper {
+  background: #fff;
+  position: fixed;
+  max-width: 2000px;
+  height: 2000px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 4px rgba(2, 2, 2, 0.2);
+
+}
+.sidebar-wrapper a {
+  color: #fff;
+}
+.profile{
+  height:150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.main-wrapper {
+  margin-top: 1px;
+  background: #fbfbfb;
+  padding: 10px;
+  height: 120%;
+  width:100%;
+
+}
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  .sidebar-wrapper {
+    position: static;
+    width: inherit;
+  }
+  .main-wrapper {
+    padding: 30px;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+#top{
+
+  background-color:#2ea775;
+  line-height:30px;
+  height:2%;
+  width:100%;
+  float:top;
+  font-family: impact;
+  font-weight: 20px;
+  padding-left: 2%;
+  padding-right: .5%;
+  padding-bottom: 5%;
+  left:0%;
+  top:0%;
+  bottom: 0%;
+  position: absolute;
+   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 4px rgba(2, 2, 2, 0.2);
+
+}
+#divtoprint{
+  margin-top: 2%;
+}
+#menu{
+  margin-top: 3%;
+  background: #fff;
+  padding: 30px;
+  right:0;
+}
+.top-btn{
+padding-left: 2px;
+padding-right: 2px;
+background-color:#fff;
+height: 5%;
+width: 18%;
+border-style:none;
+border-radius: 2px 2px 2px 2px;
+color:#2ea775;
+font-family: 'Roboto', sans-serif;
+transition-duration: .3s;
+font-size: 110%;
+right: 0%;
+opacity: .8;
+  top: .5%;
+bottom:10%;
+position: absolute;
+}
+#home{
+  left: 1%;
+}
+#searchjob{
+  left: 21%;
+}
+#searchapplicant{
+  left:41%;
+}
+#about{
+  left:61%;
+}
+
+#help{
+  left:61%;
+}
+.div-show{
+  background-color: #fbfbfb ;
+  width: 100%;
+  left: 0%;
+  height: 200%;
+  background-image: url(freshtart.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: repeat-y;
+
+}
+#jobdiv{
+ top:7%; 
+ position: absolute;
+ width: 95%;
+ left: 2.5%;
+height: 90%;
+
+
+}
+#Applicantdiv{
+ top:7%; 
+ position: absolute;
+ width: 95%;
+ left: 2.5%;
+height: 90%;
+
+}
+#helpdiv{
+ top:7%; 
+ position: absolute;
+ width: 95%;
+ left: 2.5%;
+   height: 90%;
+}
+.topbar-btn{
+padding-left: 2px;
+padding-right: 2px;
+background-color:#36c389;
+height: 40%;
+border-style: none;
+border-radius: 2px 2px 2px 2px;
+color:#fff;
+font-family: 'Roboto', sans-serif;
+transition-duration: .3s;
+font-size: 110%;
+opacity: .8;
+position: absolute;
+top:35%;
+right: 0%;
+}
+#signup-btn{
+  left: 82%;
+  width: 7.5%;
+}
+#signin-btn{
+  left: 91%;
+  width: 6%;
+}
+#modal-login-applicant{
+  background-color: #fff;
+  border-style:none;
+  height: 40%;
+  width: 30%;
+  position: fixed;
+  top:30%;
+  left:35%;
+  right:35%;
+  border-radius: 2% 2% 2% 2%;
+  z-index: 1;
+   background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-input{
+  height: 5%;
+  width: 16%;
+  border-radius: 5px;
+  position: fixed;
+  left:42%;
+  padding-left: 5px;
+  padding-right:20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 110%;
+}
+#modalacc{
+  position: fixed;
+  top: 43%;
+}
+#modalpass{
+  position: fixed;
+  top: 49%;
+}
+.modal-btn{
+  position: fixed;
+  top:55%;
+  height: 5.5%;
+  width: 7.8%;
+  border-style: none;
+  border-radius: 2px;
+  color: white;
+}
+#modal-login-btn{
+left: 42.2%;
+background-color: #74f3ae;
+transition-duration: .5s;
+}
+#modal-login-btn:hover{
+  background-color: #21ff86;
+}
+#modal-cancel-btn{
+left: 50.2%;
+background-color: #ff8383;
+transition-duration: .5s;
+}
+#modal-cancel-btn:hover{
+background-color: #f13333;
+}
+#exit-modal{
+  position: fixed;
+  color: #747b84;
+  -webkit-filter: grayscale(50%);
+  border-style: none;
+  border-radius: 2px;
+  height: 3%;
+  width: 2%;
+  top: 31%;
+  left: 62%;
+  margin: 2px;
+  background-color:white;
+  -webkit-filter: grayscale(50%);
+  opacity: .4;
+  font-family: 'arial';
+  font-size: 110%;
+  transition-duration: .2s;
+}
+#exit-modal:hover{
+  opacity: .5;
+}
+.img_profile{
+  height:150px;
+  width:150px;
+  position: absolute;
+  top:5%;
+  left: 1%;
+}
+.info{
+  position: absolute;
+  top: 6%;
+  left: 30%;
+  margin: 1%
+  white-space: nowrap; 
+  width: 60%; 
+  height: 88%;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+.divcard{
+  position: relative;
+  height:36%; 
+  width:71%;
+  left: 30%;
+  background-color: #fff;
+  top:5%;
+  border-radius: 5px;
+   border-style: solid;
+  border-color: #eee; 
+  border-width: .1px;
+   overflow: hidden;
+  text-overflow: ellipsis; 
+  margin: 5px;
+}
+.row{
+  position: absolute;
+  height:30%; 
+  width:30%;
+   background-color: #fff;
+   top:10%;
+   border-radius: 5px;
+  border-style: solid;
+  border-color: #eee;; 
+  border-width: .1px;
+}
+.taglink{
+  position: absolute;
+   top: 60%;
+   left: 1%;
+}
+.img_profilediv{
+  position: absolute;
+  top:1%;
+  left: 80%;
+  height: 100%;
+  width: 100%;
+}
+.filterdrop{
+  margin-left:20%;
+  margin-top: 2%;
+  margin-right: 20%;
+  border-style: solid;
+  border-width: 10%;
+  border-radius: 2%;
+  height: 40px;
+  width: 60%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 110%;
+}
+.btn-card{
+  position:absolute;
+  top: 53.5%;
+  width: 7%;
+  height: 9%;
+  border-style:none;
+  color: #fff;
+  border-radius:3px; 
+  opacity: .7;
+  transition: .2s;
+}
+
+#btn-like{
+left: 1%;
+background-color: #3fe088;
+}
+#btn-view{
+ left: 8.5%; 
+ background-color: #44dcde;
+}
+#btn-pass{
+ left: 16.2%; 
+ background-color: #ff4e4e;
+}
+#btn-like:hover{
+  opacity: 1;
+}
+#btn-view:hover{
+opacity: 1;
+}
+#btn-pass:hover{
+opacity: 1;
+}
+#pagination{
+  position: absolute;
+  top:3.5%;
+}
+#pagination2{
+  position: relative;
+  bottom:0%;
+}
+.searchbox{
+  height: 5%;
+  width:90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #eee; 
+  border-width: .1px;
+  padding-left: 2%;
+}
+.search-btn{
+  position: absolute;
+  left: 90%;
+  height: 5%; 
+  border-style: solid;
+  border-color:#eee; 
+  border-width: .1px .1px .1px 0px;
+  border-radius: 0px 5px 5px 0px; 
+}
+.logofs{
+  position: fixed;
+  top:0%;
+height: 100%;
+width: 100%;
+}
+#top-logo{
+  position: absolute;
+  height: 120%;
+  width: 12%;
+  left: 0%;
+  top:-10%;
+  
+}
+.visible{
+position: fixed;
+top: 49.7%;
+left: 56%;
+height: 4%;
+width: 1.5%;
+border-style: none;
+background-color: white;
+}
+.visible-icon{
+position: fixed;
+top: 49.7%;
+left: 56%;
+height: 4%;
+width: 1.5%;
+}
+h2{
+  color: white;
+  position: fixed;
+  left:47%;
+}
+.forgotpass{
+    color: white;
+  position: fixed;
+   left:46%;
+   top:61%;
+}
+.noaccount{
+    color: white;
+  position: fixed;
+   left:44.7%;
+   top:65%;
+}

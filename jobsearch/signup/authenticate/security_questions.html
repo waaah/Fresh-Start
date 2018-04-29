@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign-Up Form Testing</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Start of Materialize.css-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+    <!--/ End of Materialize.css-->
+
+    <!--Angular Plugins-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
+    <script type="text/javascript" src="security-ctrl.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-messages.js" integrity="sha256-T6HnkPMA5Ns5KMNCjniddcOy8fKP73EXnp2qdSYkydM=" crossorigin="anonymous"></script>
+    <!--end of Angular Plugins-->
+	
+	<!--Notification Plugins-->
+	<script type="text/javascript" src="notyf.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="notyf.min.css">
+	<!--End of Notification Plugins-->
+	
+	<link href="animate.css" rel="stylesheet">
+	<script src="/jobsearch/sweetalert2/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="/jobsearch/sweetalert2/sweetalert2.min.css">
+
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Roboto');
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+		body{
+			background:url("/jobsearch/signup/bg.jpg") no-repeat center center fixed; 
+  			-webkit-background-size: cover;
+  			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			margin-top: 50px;
+			
+		}
+		.ripple{position:relative;overflow:hidden;transform:translate3d(0,0,0)}.ripple:after{content:"";display:block;position:absolute;width:100%;height:100%;top:0;left:0;pointer-events:none;background-image:radial-gradient(circle,#000 10%,transparent 10.01%);background-repeat:no-repeat;background-position:50%;transform:scale(10,10);opacity:0;transition:transform .5s,opacity 1s}.ripple:active:after{transform:scale(0,0);opacity:.2;transition:0s}
+		.card-header{
+			height: 100px;
+			padding:20px;
+		}
+		.card-header.sm{
+			height: 70px;
+		}
+		.align-right{
+			float: right;
+		}
+		.container-forms{
+			margin: 50px;
+		}
+		.col{
+			padding: 20px;
+		}
+		hr{
+			border:2px white solid;
+		}
+		h5{
+			color: white;
+		}
+	</style>
+</head>
+<body ng-controller="appController" ng-app="myApp">
+	<div class="container">
+		<div class="row">
+			<div class="col m6">
+				<hr>
+					<img src="/jobsearch/img/freshstartlogo.png" width="300">
+					<h5 style="font-weight: bold;">Good Job! An account has been created. However, registration is not yet complete. Before we can send you a verification request, you must first choose three questions and input an appropriate answer.</h5>
+				<hr>
+			</div>
+	      	<div class="col m6">
+				<div class="card animated bounceInUp">
+					<form name="security">
+						<div class="card-header teal">
+							<h4 style="color:white">Question(s)</h4>
+						</div>
+						<div class="card-content">					
+							<div class="row">
+						    	<a class="btn btn-sm btn-outline-primary ripple" href="#questionModal" ng-show="questionCount">Question Count: {{questionCount}}</a>
+						    </div>
+						    	<label>Security Question:</label>	    
+							    <div class="input-field col s12">
+							    	<select class="browser-default" name="security_question" ng-model="security_question" ng-options="question for question in savedQuestions | orderBy:question" ng-required="true" required>
+							    	</select>
+							    	<div ng-messages="security.security_question.$error" style="color:red" role="alert">
+							    		<div ng-message="required" ng-show="security.security_question.$dirty">This field is required</div>
+							    	</div>
+							    </div>
+							    <div>
+							    	<label>Answer</label>
+							    	<input id="answer" class="browser-default" name="answer" ng-model="security_answer" ng-required="true" >
+							    	<div ng-messages="security.answer.$error" style="color:red" role="alert">
+							    		<ng-message when="required" ng-show="security.answer.$dirty" translate>This field is required</ng-message>
+							    	</div>
+							    </div>
+							    
+						</div>
+						<div class="card-action">
+							<button class="btn btn-primary ripple" type="reset">Clear</button>
+					    	<button class="btn btn-primary ripple" type="button" ng-disabled="!enableSubmit()" ng-click="addQuestions(security)">Add</button>
+					    	<button class="btn btn-primary ripple" type="button" ng-disabled="enableSubmit()" ng-click="saveData()">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+    </div>
+    <!-- Modal for Questions -->
+    <div id="questionModal" class="modal">
+    	<div class="modal-content">
+    		<div class="card" ng-repeat="question_set in questions">
+	        	<div class="card-header sm teal" style="color: white">
+	        		<h5 class="card-title" style="display: inline;">Security Question {{$index+1}}</h5>
+	       			<button class="material-icons btn-flat waves-effect waves-light align-right" style="color:white" ng-click="deleteQuestion(question_set)">delete</button>
+	        	</div>
+	        	<div class="card-block" style="padding: 20px;">
+	        		<h5>{{question_set.question}}</h5>
+	        		<p>{{question_set.answer}}</p>
+	        	</div>
+	        </div>
+    	</div>
+    	<div class="modal-footer">
+    		<a class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    	</div>
+    </div>
+</body>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.modal').modal();
+  });
+</script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="refresh" content="0; url=/jobsearch/index.php" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<style type="text/css">
+		body{
+			font-size: 22px;
+			font-family: "Century Gothic";
+			text-align: center;
+		}
+		.redirect{
+			margin: 0 auto;
+			margin-top: 50px; 
+		}
+		span.error{
+			height: 150px;
+			width: 150px;
+			border-radius: 50%;
+			border: 2px solid red;
+			display: inline-block;
+			margin-bottom: 10px;	
+			position: relative;
+			font-size: 20px;
+		}
+		span.error::before{
+			content: "\00d7";
+			color:red;
+			margin: 0 auto;
+			height: 100%;
+			display:block;
+			height: 200px;
+			line-height: 190px;
+			transform: scale(5,5);
+		}
+	</style>
+</head>
+<body>
+	<div class="redirect">
+		<center><span class="error"></span></center>
+		Sorry, page redirect was not successful. Click <a href="/jobsearch/index.php">here</a> to go to the front page.
+	</div>
+</body>
+</html>

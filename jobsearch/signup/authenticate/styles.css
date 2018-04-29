@@ -1,0 +1,246 @@
+html{
+  background: url(bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+  font-family: 'Lato', sans-serif;
+}
+.form-container{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 600px;
+  width: 95%;
+}
+.form{
+  background: rgba(19, 35, 47, 1);
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  color: white;
+  display: block;
+}
+#password_strength{
+  font-weight: bolder;
+}
+.form-control-container{
+  display: block;
+  
+}
+input, textarea,select {
+  font-size: 16px;
+  display: block;
+  width: 98%;
+  height: 98%;
+  padding: 5px 10px;
+  background: rgba(19, 35, 47, 0.9);
+  color: white;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+  font-family: 'Lato', sans-serif;
+
+}
+input:focus, textarea:focus , select:focus {
+  outline: 0;
+  border-color: #1ab188;
+}
+option{
+  color: black;
+}
+label{
+  color: white;
+  display: block;
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+.form >.top {
+  text-align: center;
+}
+.bottom{
+  text-align: right;
+  margin-top: 20px;
+}
+.button {
+  border: none;
+  padding:15px;
+  font-size: 16px;
+  color: white;
+  background: #179b77;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.ripple{position:relative;overflow:hidden;transform:translate3d(0,0,0)}.ripple:after{content:"";display:block;position:absolute;width:100%;height:100%;top:0;left:0;pointer-events:none;background-image:radial-gradient(circle,#000 10%,transparent 10.01%);background-repeat:no-repeat;background-position:50%;transform:scale(10,10);opacity:0;transition:transform .5s,opacity 1s}.ripple:active:after{transform:scale(0,0);opacity:.2;transition:0s}
+
+.hidden{
+  display: none;
+}
+/*for pointers */
+.steps {
+  padding-left: 0;
+  list-style: none;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  margin: 30px auto;
+  margin-bottom: 20px;
+  color:white;
+  border-radius: 3px;
+  display:block;
+  background-color: rgba(19, 35, 47, 1);
+}
+
+.steps strong {
+  font-size: 14px;
+  display: block;
+  line-height: 1.4;
+}
+
+.steps>li {
+  position: relative;
+  display: block;
+  /* border: 1px solid #ddd; */
+  padding: 12px 50px 8px 50px; 
+  height: 50px;
+}
+ .active{
+    background-color: #179b77;
+  }
+
+@media (min-width: 768px) {
+  .steps{display: inline-block;width: 600px;}
+  .steps li { float: left;width: 100px; }  
+  .steps li > span:after,
+  .steps li > span:before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid transparent;
+    border-left-color:transparent;
+    z-index: -2; 
+    border-width: 0px;
+  }
+  label{
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  /* Arrows at start and end */
+  /*.steps li:first-child i,
+  .steps li:last-child i {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid transparent;
+    border-left-color: white;
+    border-width: 30px;
+  }*/
+
+  
+}
+.overlay{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  margin:0;
+}
+.number {
+  background-color: #179B77;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  font-size: 16px;
+  margin-right: 8px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+  display: inline-block;
+  position: relative;
+  top: -7px;
+}
+.top > h1{
+  display: inline-block;
+}
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  width: 100%;
+}
+
+.flex-container input,label{
+  display: inline-block;
+}
+
+#password_strength{
+  display: block;
+}
+label.error::before {
+  content: "\00d7";
+  color: white;
+  background-color: #ff3333;
+  border-radius: 50%;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 2px;
+  margin-right: 3px;
+}
+label.error{
+  margin: 10px;
+  padding: 0;
+  height: 10px;
+  color: red;
+  font-weight: bolder;
+  display: inline-block;
+}
+.circle{
+  padding: 10px;
+  padding-left: 13px;
+  padding-right: 13px;
+  float: left;
+  border:2px white solid;
+  border-radius: 50%;
+  margin-left: -20px;
+  margin-right: 10px;
+  margin-top: 2px; 
+  font-size: 20px;
+  text-align: center;
+}
+span.cross::before{
+  content: "\00d7";
+}
+span.check::before{
+  content: "\2713";
+}
+.circle.green{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4e391+0,61c419+50,b4e391+100;Green+3D */
+  background: #b4e391; /* Old browsers */
+  background: -moz-linear-gradient(top, #b4e391 0%, #61c419 50%, #b4e391 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #b4e391 0%,#61c419 50%,#b4e391 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #b4e391 0%,#61c419 50%,#b4e391 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 ); /* IE6-9 */
+}
+.circle.red{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3019+0,cf0404+100;Red+3D */
+  background: #ff3019; /* Old browsers */
+  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ff3019 0%,#cf0404 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ff3019 0%,#cf0404 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */
+}
